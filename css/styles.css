@@ -35,7 +35,7 @@ a{
 .button {
     width: 150px; /* Adjust the width as needed */
     padding: 15px; /* Adjust padding for height */
-    background-color: #B88A44; /* Button background color */
+    background-color: #C1ADA3; /* Button background color */
     color: white; /* Button text color */
     border: none; /* Remove border */
     border-radius: 5px; /* Optional: Add rounded corners */
@@ -362,7 +362,7 @@ nav a:visited{
 
 /* Headline */
 .headline{
-    background-image: url("../img/headshot-background-4.jpg");
+    background-image: url("../img/headshot-background-3.jpg");
     background-size: cover;
     background-position: bottom right;
     display: flex;
