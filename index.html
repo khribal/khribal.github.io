@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,400;9..40,700&display=swap" rel="stylesheet">
+
+    <!-- Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Flickty Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flickity@2.2.2/dist/flickity.min.css">
+
+    <title>Homepage</title>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+<section>
+    <div class="headline">
+        <div class="headline-container">
+            <h1 class="headline-text heading">Hi, I'm Kim Hribal</h1>
+            <p class="headline-body heading">Welcome, I'm glad you're here! Throughout my site, I have linked different projects
+                that I have completed throughout my time as an Informatics student. Happy scrolling!
+            </p>
+            <button class="button">Contact me!</button>
+            <a href="#p2"><div class="down-arrow"></div></a>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="p2">
+        <img src="img/headshot.jpg" alt="headshot" class="p2-img">
+        <div class="p2-div">
+            <h2>I am passionate about coding and learning new things.</h2>
+            <p>As an informatics student, my major is incredibly multidisciplinary. I enjoy working with
+                HTML, CSS5, MySQL, and Python. I am hoping to continue to learn new languages, disciplines, 
+                and techniques as I begin my shift from a student to a professional. 
+            </p>
+        </div>
+    </div>
+
+    <div class="p3">
+            <div class="p3-div">
+                <h2>I have a love for creativity.</h2>
+                <p>Throughout my life, I have always enjoyed various creative projects - jewerly making,
+                    drawing and painting, nail art and DIY manicures, crochet and knitting, and sewing.
+                    I have found that web design is another outlet for my creativity, and this definitely plays a role
+                    in my love for it. I hope to improve my photoshop and graphic design skills in the future to be able
+                    to enhance and personalize my sites even more. 
+                </p>
+            </div>
+        <img src="img/headshot.jpg" alt="headshot" class="p3-img">
+    </div>
+</section>
+
+
+<!--Carousel ref: https://css-tricks.com/creating-responsive-touch-friendly-carousels-with-flickity/-->
+<!-- Additional source: https://codepen.io/desandro/pen/emjrBm -->
+<!-- Flickity HTML init -->
+<section id="portfolio">
+<h1 class="heading-text heading">My Projects</h1>
+<div class="gallery js-flickity"
+  data-flickity-options='{ "wrapAround": true }'>
+    <div class="gallery-cell">
+        <div class="cell-top">
+            <h2>Real Estate Predictive Algorithm Using R</h2>
+            <p>October-December 2023</p>
+        </div>
+        <div class="cell-content">
+            <ul>
+                <li>Worked with a partner to create a predictive algorithm to determine median real estate value in California based on input values.</li>
+                <li>Found a dataset online via Kaggle and cleaned and prepared the data for analysis</li>
+                <li>Conducted a single variable linear regression model using SSE's (sum of squares error)</li>
+                <li>Found a high correlation between our target variable (median home value) and median income.</li>
+                <li>Began to develop a multivariable regression, we determined variable selection with forward selection process- starting with the variable with lowest SSE, and adding the variable that resulted in the lowest SSE when in combination with the first, and continued.</li>
+                <li>We added the most effective attributes to our predictive algorithm, based on the results of the multivariable regression.</li>
+                <li>We developed the prediction model using the predict() function in R, and found we had an SAE of about 40k.</li>
+            </ul>
+
+            <button><a href="https://drive.google.com/drive/folders/1Pt68mTKTgsuX4Wlgj04b9SF4Y3A70cey" target="_blank" rel="noopener">Link to project files</a></button>
+        </div>
+    </div>
+    <div class="gallery-cell">
+        <div class="cell-top">
+            <h2>Trip Management Site</h2>
+            <p>January-May 2023</p>
+        </div>
+        <div class="cell-content">
+            <ul>
+                <li>Throughout a semester long project, I developed a management plan for a mock Outdoor Adventure organization.</li>
+                <li>The project involved the use of a virual environment through Flask.</li>
+                <li>I was also taught how to use Jinja, for the purpose of using templates and adding data to the site from SQL.</li>
+                <li>The main programming language throughout the project was Python, which I had never used in web development before.</li>
+                <li>I felt challenged as I learned these skills throughout the course, but I am now confident in my ability to learn new languages and processes.</li>
+            </ul>
+
+            <button><a href="https://github.com/khribal/Trip-Management" target="_blank" rel="noopener">Link to project files</a></button>
+        </div>
+    </div>
+    <div class="gallery-cell">
+        <div class="cell-top">
+            <h2>Connecting SQL to a Webpage</h2>
+            <p>March-May 2023</p>
+        </div>
+        <div class="cell-content">
+            <ul>
+                <li>Worked with a partner to create a database and private site for a music tutor's company</li>
+                <li>Designed a database through ERD, logical conversion, and created mock data to input into the database</li>
+                <li>Using PHP and HTML, we designed a site that would answer logistical quetsions for the owner using mySQL queries</li>
+                <li>Incorporated Bootstrap for ease of design</li>
+            </ul>
+
+            <button><a href="https://github.com/khribal/Melody_Music_Makers" target="_blank" rel="noopener">Link to project files</a></button>
+        </div>
+    </div>
+    <div class="gallery-cell">
+        <div class="cell-top">
+            <h2>Barbie Data: Microsoft VBA</h2>
+            <p>October 2023</p>
+        </div>
+        <div class="cell-content">
+            <ul>
+                <li>Open ended project where I was able to choose a database, and create VBA code in a secure way so that users could interact with the database.</li>
+                <li>I focused on user forms and giving a variety of choices for the user.</li>
+                <li>Developed code based on the data that was available to me, in the most meaningful way possible.</li>
+                <li>Coded security measures so that users couldn't go into the file and mess up the data, only are able to do what is intended.</li>
+            </ul>
+
+            <button><a href="https://indiana-my.sharepoint.com/:x:/g/personal/klhribal_iu_edu/EeiWX29OfNRDrGwS2C-ZiAwB_oH5rr6rkZNzsUmoY33vWw?rtime=mwRjwuoW3Eg" target="_blank" rel="noopener">Link to project files</a></button>
+        </div>
+    </div>
+    <div class="gallery-cell">
+        <div class="cell-top">
+            <h2>UI/UX Project: Scheduler</h2>
+            <p>September-November 2022</p>
+        </div>
+        <div class="cell-content">
+            <ul>
+                <li>A group and I defined a problem, researched that problem, and then created our own solution.</li>
+                <li>We chose to create a calendar for students to be able to comprehensively schedule their events, import Canvas tasks, and share with friends.</li>
+                <li>Our team began to conduct research, and started creating our low fidelity prototypes of the app.</li>
+                <li>We converted our low fidelity sketches into a Figma prototype.</li>
+                <li>After completing our prototype, we began to conduct usability tests, and made revisions as necessary.</li>
+                <li>Our team presented the final application in front of our peers to hear their opinions.</li>
+            </ul>
+
+            <button><a href="https://docs.google.com/presentation/d/1ijXUI-ZNYGow-iqDcEbuRn7wK9oftgdRXUolV2OkENI/edit?usp=sharing" target="_blank" rel="noopener">Link to project files</a></button>
+        </div>
+    </div>
+</div>
+
+
+    <h1 class="heading-text heading">Campus Involvement</h1>
+    <div class="involvement-container">
+        <div class="involvement-item">
+            <div class="involvement-head">
+                <h3>Women Who Code</h3>
+                <p>Role: Member</p>
+            </div>
+                <ul>
+                    <li>Social events geared toward getting to know other women in Luddy</li>
+                    <li>Development workshops to learn new skills and techniques and refine current skills</li>
+                </ul>
+        </div>
+        <div class="involvement-item">
+            <div class="involvement-head">
+                <h3>Women in Computing</h3>
+                <p>Role: Member</p>
+            </div>
+                <ul>
+                    <li>Social club focusing on creating a community for women in Luddy</li>
+                    <li>Networking opportunities and recreational activities with club</li>
+                </ul>
+            
+        </div>
+        <div class="involvement-item">
+            <div class="involvement-head">
+                <h3>Entrepreneurs in Tech</h3>
+                <p>Role: Member</p>
+            </div>
+                <ul>
+                    <li>Women led organization discussing women in entrepreneurship</li>
+                    <li>Discussions about entrepreneurship in technology and leaders in the field</li>   
+                </ul>
+        </div>
+        <div class="involvement-item">
+            <div class="involvement-head">
+                <h3>Mother Hubbard's Cupboard</h3>
+                <p>Role: Volunteer</p>
+            </div>
+                <ul>
+                    <li>Restocking food pantry shelves</li>
+                    <li>Helping patrons with dietary restrictions or special accommodations</li>
+                    <li>Managing front desk and signing patrons in, encouraging filling out surveys for USDA funding</li>
+                </ul>
+            
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="p4">
+        <div class="card">
+            <div class="photo"></div>
+            <div class="banner"></div>
+            <ul>
+                <li><b>Kim Hribal</b></li>
+                <li>Informatics Student</li>
+
+            </ul>
+            <button class="contact" id="main-button">click to get in touch</button>
+            <div class="social-media-banner"></div>
+          <form class="email-form" data-email="klhribal@iu.edu">
+                <input id="name" type="text" placeholder="name">
+                <input id="email" type="text" placeholder="email">
+                <textarea id="comment" type="text" placeholder="comment"></textarea>
+                <button class="contact">send</button>
+          </form>
+          </div>
+    </div>
+</section>
+
+    <div class="footer-container">
+        <ul class="footer">
+            <li>
+                <ul class="footer-contact">
+                    <li>hribalkim@gmail.com</li>
+                    <li>6304021674</li>
+                </ul>
+            </li>
+            <li class="footer-initials"><h1>KH</h1></li>
+            <li>
+                <ul class="footer-links">
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    <li><img src="img/handshake.png" alt="handshake-logo"></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+<!-- Link to flickity via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
+
+
+
+<!-- Link to js files -->
+<script src="js/bundle.js"></script>
+<script src="js/sendEmail.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/scrollAnimate.js"></script>
+<script src="js/arrow.js"></script>
+<script src="js/contactCard.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/flickity.js"></script>
+
+
+<!-- Flickity initialization directly in the HTML -->
+<!-- <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var flkty = new Flickity('.js-flickity', {
+      wrapAround: true,
+      prevNextButtons: true,
+      pageDots: false
+    });
+  });
+</script> -->
+  
+
+
+</body>
+</html>
