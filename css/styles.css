@@ -148,7 +148,9 @@ nav a:visited{
     height: 125vh;
     display: flex;
     align-items: center;
-    background-color: #F2D5E5;
+    /* background-color: #877972; */
+    border-top: 15px double #877972;
+    border-bottom: 15px double #877972;
 }
 
 .p3-img{
